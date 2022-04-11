@@ -1,0 +1,89 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: sans-serif;
+  background-color: #555;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  margin: 0 auto;
+  padding: 2rem;
+}
+
+h1 {
+  color: #fff;
+  margin-bottom: 1rem;
+  letter-spacing: 1.2px;
+  word-spacing: 1.25px;
+}
+
+.screen {
+  background-color: #000 !important;
+  width: 70%;
+  cursor: pointer;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+
+.controls {
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-self: center;
+  gap: 0.6rem;
+  color: #fff;
+  background-color: #777;
+  border-bottom-left-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  padding: 1rem;
+}
+
+.btn {
+  border: 0;
+  background: transparent;
+  cursor: pointer;
+}
+
+.play {
+  color: #28a745;
+  font-size: 2rem;
+}
+
+.stop {
+  color: #dc3545;
+  font-size: 2rem;
+}
+.pause {
+  color: #fff;
+}
+
+.progress {
+  color: #fff;
+  font-weight: bold;
+  margin-left: 1rem;
+}
+
+@media (max-width: 800px) {
+  .screen,
+  .controls {
+    width: 80%;
+  }
+}
+
+@media (max-width: 500px) {
+  .screen,
+  .controls {
+    width: 80%;
+  }
+}
+
+@media (max-width: 430px) {
+  h1 {
+    font-size: 100%;
+  }
+}
